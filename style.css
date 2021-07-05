@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background: #222;
+    font-size: medium;
+    border-radius: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(94, 52, 52);
+    border-radius: 20px;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: left;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding: 20px 0;
+}
+
+.chess-container {
+    margin: auto;
+    background-color: aliceblue;
+    width: 1000px;
+}
+
+.canvas {
+    border: 3px solid rgb(15, 5, 0);
+}
