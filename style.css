@@ -49,8 +49,15 @@ nav li {
     margin: auto;
     background-color: aliceblue;
     width: 1000px;
+    height: 2000px;
+    padding-left: 90px;
 }
 
 .canvas {
-    border: 3px solid rgb(15, 5, 0);
+    border: 3px solid rgb(0, 0, 0);
+    margin: 50px;
+}
+
+.fen-input {
+    width: 500px;
 }

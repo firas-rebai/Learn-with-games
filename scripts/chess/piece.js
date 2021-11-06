@@ -27,19 +27,20 @@ export default class piece {
     set color(value) {
         this._color = value;
     }
-    constructor(x, y, type, color) {
-        this.x = x;
-        this.y = y;
-        this.type = type;
-        this.color = color;
+    constructor(x, y, color, type) {
+        this._x = x;
+        this._y = y;
+        this._type = type;
+        this._color = color;
     }
 
     draw(context) {
         var img = new Image();
         img.onload = function() {
-            context.drawImage(img, this.x * 100 + 20, this.y * 100 + 20);
+            context.drawImage(img, this._x * 100 + 20, this._y * 100 + 20);
             console.log("draw " + this.x + " " + this.y + " " + this.color + this.type);
         }
         img.src = "../resources/chess/" + this.color + this.type + ".png";
+        console.log(img.src);
     }
 }
